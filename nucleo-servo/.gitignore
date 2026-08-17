@@ -1,0 +1,22 @@
+# Build output
+build/
+cmake-build-*/
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+
+# CubeMX backups
+*.bak
+*.old
+
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*~
+
+# Debugger artifacts
+*.launch

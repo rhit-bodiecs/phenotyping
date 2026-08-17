@@ -1,0 +1,21 @@
+clear; clc;
+original = imread("demo.jpg");
+im = im2gray(original);
+im = imbinarize(im, 'global');
+im = ~im;
+
+high = 500; 
+low = 100;
+%BW = logical(im);
+
+small_objects_mask = bwpropfilt(im, 'Area', [low, high - 1]);
+imshow(small_objects_mask)
+
+[h, w] = size(im);
+for i = 1:w
+    for j = 1:h
+        if small_objects_mask(j, i) == 1
+
+        end
+    end
+end
