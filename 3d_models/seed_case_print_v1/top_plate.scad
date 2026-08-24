@@ -18,7 +18,8 @@ corner_r = 2;       // mm, just enough to remove sharp corners
 wall_slot_clearance = 0.3; // mm extra slot size for sliding wall parts into plate
 
 // Cutout matching the outer tray footprint of the moving funnel adapter.
-funnel_cutout_w = 124;       // mm, long side plus clearance for rotation
+funnel_cutout_w = 124;       // mm, nominal long side for housing layout
+top_plate_cutout_extra_w = 4; // mm, widens only the top plate tray cutout by 2 mm per side
 funnel_cutout_h = 87;        // mm, short side plus clearance for rotation
 funnel_front_gap = 20;       // mm from front long edge of plate to cutout
 funnel_cutout_r = 2;         // mm, slight radius to avoid sharp internal corners
@@ -118,7 +119,7 @@ module base_plate() {
 module funnel_tray_cutout() {
   translate([0, funnel_cutout_y, -0.5])
     linear_extrude(height = plate_thick + 1)
-      rounded_rect_2d(funnel_cutout_w, funnel_cutout_h, funnel_cutout_r);
+      rounded_rect_2d(funnel_cutout_w + top_plate_cutout_extra_w, funnel_cutout_h, funnel_cutout_r);
 }
 
 // Cuts the round spout opening through the front wall.
@@ -500,6 +501,7 @@ if (part_to_show == "plate") {
 } else {
   case_assembly();
 }
+
 
 
 

@@ -80,6 +80,18 @@ The repository ignores:
 
 These files are useful locally for documentation and presentation work but are excluded from version control.
 
+
+## Bill of Materials
+
+Prototype electronics and hardware links:
+
+| Item | Link |
+| --- | --- |
+| BOM item 1 | [Amazon ASIN B01I8XLEM8](https://www.amazon.com/dp/B01I8XLEM8) |
+| BOM item 2 | [Amazon ASIN B07HNTKSZT](https://www.amazon.com/dp/B07HNTKSZT) |
+| BOM item 3 | [Amazon ASIN B08BCBZ632](https://www.amazon.com/dp/B08BCBZ632) |
+| BOM item 4 | [Amazon ASIN B01ERP6WL4](https://www.amazon.com/dp/B01ERP6WL4) |
+
 ## Current Prototype Status
 
 The current print-ready mechanical checkpoint is `3d_models/seed_case_print_v1/`. The parts are separated for modular printing and iterative fit testing. The design is still experimental, especially the tab/slot tolerances, collector geometry, and future servo mounting/alignment.
@@ -92,3 +104,4 @@ Primary tools used so far:
 - STL exports for 3D printing
 - Shark WV201 vacuum for suction testing
 - STM32/Nucleo-style development target for planned servo control experiments
+
