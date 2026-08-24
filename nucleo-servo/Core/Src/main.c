@@ -48,13 +48,13 @@ TIM_HandleTypeDef htim8;
 static const uint16_t SERVO_MIN_US    = 500U;
 static const uint16_t SERVO_CENTER_US = 1500U;
 static const uint16_t SERVO_MAX_US    = 2500U;
-static const uint16_t SERVO_JITTER_US = 50U;
+static const uint16_t SERVO_JITTER_US = 200U;
 static const uint16_t SERVO_QUARTER_US = 675U;
 
 static const uint16_t SERVO_START = SERVO_CENTER_US - SERVO_QUARTER_US;
 static const uint16_t SERVO_DUMP = SERVO_CENTER_US + SERVO_QUARTER_US;
 
-static const uint16_t JITTER_DELAY = 75;
+static const uint16_t JITTER_DELAY = 125;
 static const uint16_t JITTER_COUNT = 20;
 /* USER CODE END PV */
 

@@ -40,5 +40,5 @@ end
 output = uint8(output);
 
 % -----------------------------------------
-
+figure;
 imshow(output);
