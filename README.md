@@ -4,6 +4,13 @@ This repository contains prototype code and hardware design files for improving 
 
 The motivation for the project is to reduce the manual bottleneck in preparing seed samples for imaging. The current workflow requires opening a labeled packet, pouring approximately 100 seeds onto an imaging tray, manually spreading them so seeds do not touch, taking an image for downstream segmentation, and returning the seeds to the packet. Because the segmentation step expects separated seeds and is not being modified here, the hardware goal is to make seed spacing and collection faster and more repeatable.
 
+
+## Demo Video
+
+A short demo of the current prototype is available here:
+
+[Seed phenotyping automation prototype demo](https://youtu.be/DYeSpMTDBck)
+
 ## Project Concept
 
 The current prototype explores a vacuum-assisted positioning system:
@@ -92,6 +99,12 @@ Prototype electronics and hardware links:
 | BOM item 3 | [Amazon ASIN B08BCBZ632](https://www.amazon.com/dp/B08BCBZ632) |
 | BOM item 4 | [Amazon ASIN B01ERP6WL4](https://www.amazon.com/dp/B01ERP6WL4) |
 
+
+## Next Steps
+
+- Reprint the top plate with a slightly wider/longer tray cutout so the rotating tray has enough clearance. The current printed plate is slightly too small length-wise for smooth tray rotation.
+- Revise the funnel/rotating adapter model to include a printed tab at the end of the dowel/axle for connecting to the servo motor tab. The current prototype uses superglue, a loose plastic tab, and a rubber band linkage; integrating this tab directly into the printed model should make the servo linkage more reliable and repeatable.
+
 ## Current Prototype Status
 
 The current print-ready mechanical checkpoint is `3d_models/seed_case_print_v1/`. The parts are separated for modular printing and iterative fit testing. The design is still experimental, especially the tab/slot tolerances, collector geometry, and future servo mounting/alignment.
@@ -104,4 +117,6 @@ Primary tools used so far:
 - STL exports for 3D printing
 - Shark WV201 vacuum for suction testing
 - STM32/Nucleo-style development target for planned servo control experiments
+
+
 
